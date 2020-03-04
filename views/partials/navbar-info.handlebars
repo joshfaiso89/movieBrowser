@@ -1,0 +1,17 @@
+<nav>
+	<div class='container'>
+		<div class="nav-wrapper">
+      <a href="/" class="brand-logo"><i class="fas fa-lg fa-film"></i>MovieBrowser</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/">Home</a></li>
+        <li><a href="https://github.com/apereira91/project2"><i class="fab fa-github"></i></a></li>
+				{{#if isAuthenticated}}
+				<li><a href='/logout' class="waves-effect waves-light btn red">Log Out<i class="fas fa-sign-out-alt fa-xs right"></i></a></li>
+				{{else}}
+        <li><a href='/login' class="waves-effect waves-light btn red">Sign in<i class="fas fa-sign-in-alt fa-xs right"></i></a></li>
+				{{/if}}
+      </ul>
+    </div>
+	</div>
+</nav>
